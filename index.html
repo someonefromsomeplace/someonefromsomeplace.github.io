@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Delivery</title>
+<style>
+*{
+text-decoration:none;
+margin: 2px;
+}
+.navbar{
+background:#202020; font-family: calibri; padding-right:15px; padding-left:30px; height:100px; display:flex; align-items: center;
+}
+.navdiv{
+display:flex; align-items: center; justify-content: space-between; padding: 30px;
+}
+.logo a{
+font-size: 35px; font-weight:600; color:white;
+}
+li{
+list-style: none; display: inline-block; padding:35px;
+}
+li a{
+color: white; font-size:18px; font-weight:bold; margin-right:25px;
+}
+.h{
+font-size: 40px; font-family: Georgia; padding:35px;
+}
+.image-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width:100%;
+overflow-x: auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-box {
+flex:0 0 auto;
+text-align: center;
+margin-right:20px;
+}
+.image-box img {
+width: 200px; 
+height: auto;
+border-radius: 35px;
+}
+.image-box p {
+margin-top: 15px;
+font-size: 19px;
+color: #333;
+}
+.s{
+font-family: Varela Round;
+font-size:19px;
+color:grey;
+}
+
+.navbar1 {
+      background: #333;
+      padding: 15px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      color: #fff;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+ .dropdown-content a { padding: 12px; text-decoration: none; display: block; color:white; }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-item {
+      padding: 12px;
+      text-decoration: none;
+      display: block;
+      color:white;
+    }
+
+    .dropdown-item:hover {
+      background-color: #ddd;
+    }
+
+
+
+#rcorner{
+ border-radius: 25px;
+margin:20px;
+  border: 2px solid grey;
+  padding: 20px; 
+  width: 1180px;
+  height: 200px;
+  font-family: Georgia;
+  font-style:bold;
+  font-size: 20px;
+}
+
+footer{
+background:lightgrey;
+padding-top:50px;
+}
+.container2{
+width: 1140px;
+margin: auto;
+display: flex;
+justify-content: center;
+}
+.footer{
+width:33.3%;
+}
+h4{
+font-size: 28px;
+margin-bottom: 15px;
+text-align:center;
+}
+.footer-content p{
+width: 190px;
+height:20px;
+margin:auto;
+padding:7px;
+}
+.footer.content ul{
+text-align: center;
+}
+.list2{
+padding: 0;
+}
+.list2 li{
+width:auto;
+text-align:center;
+list-style-type: none;
+padding: 7px;
+position:relative;
+}
+.list2 li::before{
+content:'';
+position:absolute;
+transform:translate(-50%,-50%);
+left:50%;
+top:100%;
+width:0;
+height: 2px;
+background:#f18930;
+transition-duration:.5s;
+}
+.list li:hover::before{
+width:70px;
+}
+.social-icons{
+text-align:center;
+padding:0;
+}
+social-icons li{
+display:inline block;
+text-align:center;
+padding: 5px;
+}
+.social-icons i{
+color:white;
+font-size:25px;
+}
+a{
+text-decoration:none;
+}
+a:hover{
+color:#f18930;
+}
+.social-icons i:hover{
+color:#f18930;
+}
+.bottom-bar{
+background:#f18930;
+text-align:center;
+padding:center;
+padding:10px 0;
+margin-top:50px;
+}
+.bottom-bar p{
+color:#343434;
+margin:0;
+font-size:16px;
+padding:7px;
+}
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Get the element with the ID "whatsOnYourMind"
+      var whatsOnYourMindHeading = document.getElementById('whatsOnYourMind');
+
+      // Add a click event listener to the heading
+      whatsOnYourMindHeading.addEventListener('click', function () {
+        // Display an alert when the heading is clicked
+        alert("You clicked on 'What's on your mind?'");
+      });
+    });
+  </script>
+</head>
+<body>
+<nav class="navbar">
+<div class="navdiv">
+<div class="logo"><a href="#"><img src="D:\DOWNLOADS\image-removebg-preview (1).png" width=150px; height=100px;/></a></div>
+<ul>
+<li><a href="#">Other</a></li>
+<li><a href="#">Search</a></li>
+<li><a href="#">Offers</a></li>
+<li><a href="#">Help</a></li>
+<li><a href="#">Sign in</a></li>
+<li><a href="#">Cart</a></li>
+</ul>
+</div>
+</nav>
+<h3 id="whatsOnYourMind" class="h">What's on your mind?</h3>
+<div class="image-container">
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 165558.png" width=40px; height=40px;/>
+<p class="s">North Indian</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 165644.png"/>
+<p class="s">South Indian</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 170623.png"/>
+<p class="s">Pure Veg</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 170612.png"/>
+<p class="s">Burger</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 165709.png"/>
+<p class="s">Pasta</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 165723.png"/>
+<p class="s">Chinese</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 170634.png"/>
+<p class="s">Pizza</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 165746.png"/>
+<p class="s">Drinks</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\Screenshots\Screenshot 2024-02-20 170643.png"/>
+<p class="s">Cakes</p>
+</div>
+</div>
+<br><br><br>
+<h3 class="h">Top restaurant chains in Chennai</h3>
+
+<div class="image-container">
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\biryani.avif"/>
+<p>Behrouz Biryani</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\faasos.avif"/>
+<p>Faasos-Wraps and Shawarma</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\goodbowl.avif"/>
+<p>The Good Bowl</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\mcdonalds.avif"/>
+<p>McDonald's</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\subway.avif"/>
+<p>Subway</p>
+</div>
+</div>
+<br><br><br>
+<h3 class="h">Restaurants with online food delivery in Chennai</h3>
+
+<div class="image-container">
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img1.avif"/>
+<p>LunchBox</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img2.avif"/>
+<p>Barbeque Nation</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img3.avif"/>
+<p>Madurai Jigarthanda</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img4.avif"/>
+<p>Anu Dhaba</p>
+</div>
+</div>
+<br><br>
+<div class="image-container">
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img5.avif"/>
+<p>Kalam Kitchen</p>
+</div>
+
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img6.avif"/>
+<p>fb Cakes</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img7.avif"/>
+<p>KFC</p>
+</div>
+
+<div class="image-box">
+<img src="C:\Users\91959\OneDrive\Pictures\img8.avif"/>
+<p>Kovai Kitchen</p>
+</div>
+</div>
+
+<!--
+<div class="dropdown">
+<div class="select">
+<span class="selected">Sort By</span>
+<div class="caret"></div>
+</div>
+<ul class="menu">
+<li>Relevance</li>
+<li>Delivery Time</li>
+<li>Rating</li>
+<li>Cost: Low to High</li>
+<li>Cost: High to Low</li>
+</ul>
+</div>
+
+<div class="navbar1">
+  <div class="dropdown">
+    <span class="dropdown-item">Sort By</span>
+    <div class="dropdown-content">
+      <a href="#">Item 1</a>
+      <a href="#">Item 2</a>
+      <a href="#">Item 3</a>
+    </div>
+  </div>
+</div
+-->
+
+<br><br><br><br>
+<h3 class="h">Food culture in Chennai</h3>
+<p id="rcorner">
+Why Order Food Online in Chennai with Us?
+<br><br><br>
+Do you feel too exhausted to cook? Are you anticipating visitors? When you are too tired to cook, have unexpected guests, or are working late, ordering food online is the wisest step. Swiggy comes to your rescue to calm your hunger pangs in less than an hour. All you have to do is download the app and order food online from your favourite restaurant in Chennai. Just select whether you want to pay online or cash on delivery, relax on a comfortable sofa, and wait for some delectable dishes to reach your doorstep within 45 minutes.</p>
+<footer>
+<div class="container2">
+<div class="footer-content">
+<h3>Contact Us</h3>
+<p>Email: info@gmail.com</p>
+<p>Phone: +91 345 5456 456</p>
+<p>Address: Something 123 street</p>
+</div>
+<div class="footer-content">
+<h3>Quick Links</h3>
+<ul class="list2">
+<li><a href="">Home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Services</a></li>
+<li><a href="">Contact</a></li>
+</ul>
+</div>
+<div class="footer-content">
+<h3>Follow Us</h3>
+<ul>
+<li><a href=""><i class="fab fa-facebook"></i></a></li>
+<li><a href=""><i class="fab fa-twitter"></i></a></li>
+<li><a href=""><i class="fab fa-instagram"></i></a></li>
+</div>
+</div>
+<div class="bottom bar">
+<pre>                                                                       &copy; 2024 Foodie All rights reserved</pre>
+</div> 
+</body>
+</html>
